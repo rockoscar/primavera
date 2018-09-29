@@ -9,10 +9,10 @@ package unitec.primavera;
  *
  * @author T-107
  */
-public class TarjetaDebito extends Tarjeta implements Pagos {
+public class TarjetaCredito extends Tarjeta implements Pagos {
     @Override
     public void pagar(){
-        System.out.println("Pagando tarjeta debito");
+        System.out.println("Pagando tarjeta credito");
     }
     }
 

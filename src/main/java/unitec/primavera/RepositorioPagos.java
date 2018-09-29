@@ -5,14 +5,16 @@
  */
 package unitec.primavera;
 
+import org.springframework.context.annotation.Configuration;
+
 /**
  *
  * @author T-107
  */
-public class TarjetaDebito extends Tarjeta implements Pagos {
-    @Override
-    public void pagar(){
-        System.out.println("Pagando tarjeta debito");
+@Configuration
+public class RepositorioPagos {
+    
+    void servicioPagar(){
+        new TarjetaNomina().pagar();
     }
-    }
-
+}
