@@ -25,8 +25,30 @@ public class PrimaveraApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         System.out.println("que onda");
-        repoPagos.servicioPagar();
-        repoMensa.save(new Mensaje("hola", "Puerco", LocalDate.now()));
+        //repoPagos.servicioPagar();
+        //guarda el objeto mensaje
+        //repoMensa.save(new Mensaje("malo", "puer", LocalDate.now()));
+        
+        //buscamos todos los mensajes
+        /*
+        for(Mensaje mensa: repoMensa.findAll()){
+            System.out.println(mensa);
+        }
+        */
+        
+        
+        //buscar por id
+        //System.out.println(repoMensa.findById("5baee6be6ca880247801028b").get()); 
+        
+        
+        //buscar por titulo 
+        repoMensa.save(new Mensaje("malo", "hola", "cuerpo2", LocalDate.now()));
+        System.out.println(repoMensa.findByTitulo("hola"));
+        
+         
+        //para actualizar se vuelve a usar el save
+        //repoMensa.save(new Mensaje(hola, cuerpo, LocalDate.now()));
+                
         
         //libro
         //https://docs.spring.io/spring/docs/5.0.x/spring-framework-reference/core.html#beans-annotation-config

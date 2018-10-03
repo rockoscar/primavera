@@ -20,6 +20,18 @@ public class Mensaje {
     private String cuerpo;
     private LocalDate fecha;
 
+    public Mensaje(String id, String titulo, String cuerpo, LocalDate fecha) {
+        this.id = id;
+        this.titulo = titulo;
+        this.cuerpo = cuerpo;
+        this.fecha = fecha;
+    }
+
+    @Override
+    public String toString() {
+        return "Mensaje{" + "id=" + id + ", titulo=" + titulo + ", cuerpo=" + cuerpo + ", fecha=" + fecha + '}';
+    }
+
     public Mensaje() {
     }
 
