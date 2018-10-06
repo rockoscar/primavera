@@ -40,11 +40,11 @@ public class PrimaveraApplication implements CommandLineRunner {
         //buscar por id
         //System.out.println(repoMensa.findById("5baee6be6ca880247801028b").get()); 
         
-        
+         
         //buscar por titulo 
-        repoMensa.save(new Mensaje("malo", "hola", "cuerpo2", LocalDate.now()));
-        System.out.println(repoMensa.findByTitulo("hola"));
-        
+        //repoMensa.save(new Mensaje("malo", "hola2", "cuerpo2", LocalDate.now()));
+        //System.out.println(repoMensa.findByTitulo("hola2"));
+         
          
         //para actualizar se vuelve a usar el save
         //repoMensa.save(new Mensaje(hola, cuerpo, LocalDate.now()));
