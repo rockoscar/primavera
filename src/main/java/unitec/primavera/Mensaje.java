@@ -14,6 +14,7 @@ import org.springframework.data.annotation.Id;
  */
 public class Mensaje {
     
+    //indica que es la PK
     @Id
     private String id;
     private String titulo;
